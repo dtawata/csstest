@@ -15,8 +15,13 @@ export default function Home() {
       <div className={styles.two}>two</div>
       <div onClick={changeCss} className={styles.three}>
         <div className={styles.three_top}>Top</div>
-        <div className={styles.three_mid}>Mid</div>
-        <div className={styles.three_bot}>Bottom</div>
+        <div className={styles.flex}>
+          <div className={styles.chat}>
+            <div className={styles.three_mid}>Mid</div>
+            <div className={styles.three_bot}>Bottom</div>
+          </div>
+          <div className={styles.users}>Users</div>
+        </div>
       </div>
     </div>
   );
